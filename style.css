@@ -6,7 +6,7 @@ body{
 }
 
 span{
-    font-size: 30px;
+    font-size: 20px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -32,8 +32,8 @@ ul{
     padding:0px 64px;
 }
 .title{
-    width:173px;
-    height:250px;
+    width:140px;
+    height:200px;
     padding:8px;
     font-size:30px;
     margin-bottom: 16px;
