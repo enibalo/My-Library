@@ -55,10 +55,19 @@ ul{
    
 }
 
+ul .title a {
+    font-family: "Belanosima", sans-serif;
+    font-size:90px;
+    font-weight:900;
+    
+}
+
 #reccs{
     background-color:#FC93C5;
     color:aliceblue;
 }
+
+
 
 #read{
     background-color:#60CE8C;
