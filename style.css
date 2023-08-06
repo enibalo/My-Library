@@ -37,47 +37,62 @@ ul{
 .navigator{
     padding:0px 64px;
 }
+
 .title{
     width:100px;
     height:180px;
     padding:8px;
-    font-size:32px;
-    margin-bottom: 64px;
+    font-size:32px; 
     font-family: "Belanosima", sans-serif;
-    font-size:larger;
     font-weight:900;
 }
 
+.book{
+    width:131px;
+    height:200px;
+    background-color:rgb(219, 219, 219);
+    margin-bottom:8px; 
+}
+
+.list{
+    text-align:center;
+}
+
 #shelf{
-    margin-top:64px;
+    
     background-color:#2D90A5;
-    color:#88e7ff;
-   
 }
 
 ul .title a {
     font-family: "Belanosima", sans-serif;
-    font-size:90px;
+    font-size:96px;
     font-weight:900;
     
 }
 
+.main ul {
+    padding-right:64px;
+    margin: 64px 0px;
+}
+
 #reccs{
     background-color:#FC93C5;
-    color:aliceblue;
+    
 }
 
 
 
 #read{
     background-color:#60CE8C;
-    color:#acffbb;
+    
 }
 
 a{
     text-decoration:none;
     color:black;
 }
+
+
 
 .footer{
     width: 100%;
