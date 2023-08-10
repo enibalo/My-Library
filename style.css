@@ -8,7 +8,8 @@ body{
     
 }
 
-span{
+header span{
+    
     font-size: 32px;
     display:flex;
     align-items:center;
@@ -18,7 +19,7 @@ span{
 }
 
 
-.header{
+header{
     width:100%;
     padding:8px 16px;
     display:flex;
@@ -38,6 +39,7 @@ ul{
     padding:0px 64px;
 }
 
+
 .title{
     width:100px;
     height:180px;
@@ -45,6 +47,24 @@ ul{
     font-size:32px; 
     font-family: "Belanosima", sans-serif;
     font-weight:900;
+}
+
+.book-list{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width: 131px;
+    height: 200px;
+    font-size:16px; 
+    font-family: "Belanosima", sans-serif;
+    font-weight:normal;
+}
+
+.book-list span{
+    display: inline-block;
+    max-width:100px;
+    word-wrap:break-word;
+    margin:8px;
 }
 
 .book{
@@ -61,6 +81,15 @@ ul{
 #shelf{
     
     background-color:#2D90A5;
+    
+}
+
+
+.side-navigator{
+    display: flex;
+    flex-direction:column;
+    gap: 64px;
+
 }
 
 ul .title a {
@@ -94,10 +123,41 @@ a{
 
 
 
-.footer{
+footer{
     width: 100%;
     padding:8px 16px;
     background-color:rgb(219, 219, 219);
     color:rgb(43, 42, 42);
     text-align:center;
+}
+
+
+
+button{
+    
+    width:100%;
+    border-width: 0px; 
+    background-color:#005567;
+    color:white;
+    font-size: 32px;
+    font-weight:900;
+    text-align:center;
+}
+
+.content{
+    display:flex;
+    flex-direction:row;
+    gap: 64px;
+    padding-top: 64px;
+    
+    
+}
+
+.all-books{
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    justify-content: left;
+    gap:38px;
+
 }
