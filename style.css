@@ -35,6 +35,10 @@ ul{
     gap:64px;
 }
 
+.main ul{
+    gap:112px;
+}
+
 .navigator{
     padding:0px 64px;
     margin-bottom : -64px;
@@ -53,8 +57,13 @@ ul{
     display:flex;
     flex-direction: column;
     justify-content:top;
-    gap:90px;
-    min-width: 140px;
+    gap:90px;  
+}
+
+
+.title a {
+    position: relative;
+    width: 200px;   
 }
 
 .title a::before,.title a::after {
@@ -66,18 +75,17 @@ ul{
     padding-left:8px;  
     padding-right:2px;
     max-width:200px; 
-    padding-bottom:5px;
-    
+    padding-bottom:5px;   
 }
 
 .title a::before{
     background-color: white;
-    width: auto;
+    width: 100%;
     color: yellowgreen;  
 }
 
 .title a::after{
-    width:10%;
+    width:77%;
     color:black;
     background-color: yellowgreen;
 }
