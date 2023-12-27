@@ -3,7 +3,7 @@
 
 body{
     font-family:"Roboto-Flex", sans-serif;
-    margin:0;
+    margin:0px;
     overflow-x:hidden;
     
 }
@@ -44,9 +44,39 @@ ul{
     width:100px;
     height:180px;
     padding:8px;
+    padding-top:0px;
+    padding-left:0px;
     font-size:32px; 
     font-family: "Belanosima", sans-serif;
     font-weight:900;
+    display:flex;
+    flex-direction: column;
+    justify-content:top;
+    gap:90px;
+}
+
+.title a::before,.title a::after {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    content: attr(data-text);
+    margin:0px;
+    padding-left:8px;  
+    padding-right:2px;
+    max-width:200px; 
+    padding-bottom:5px;
+}
+
+.title a::before{
+    background-color: white;
+    width: auto;
+    color: yellowgreen;  
+}
+
+.title a::after{
+    width:10%;
+    color:black;
+    background-color: yellowgreen;
 }
 
 .book-list{
@@ -78,12 +108,6 @@ ul{
     text-align:center;
 }
 
-#shelf{
-    
-    background-color:#2D90A5;
-    
-}
-
 
 .side-navigator{
     display: flex;
@@ -94,27 +118,17 @@ ul{
 
 ul .title a {
     font-family: "Belanosima", sans-serif;
-    font-size:96px;
+    font-size:94px;
     font-weight:900;
     
 }
 
 .main ul {
-    padding-right:64px;
+    padding-right:32px;
     margin: 64px 0px;
 }
 
-#reccs{
-    background-color:#FC93C5;
-    
-}
 
-
-
-#read{
-    background-color:#60CE8C;
-    
-}
 
 a{
     text-decoration:none;
@@ -126,15 +140,13 @@ a{
 footer{
     width: 100%;
     padding:8px 16px;
-    background-color:rgb(219, 219, 219);
-    color:rgb(43, 42, 42);
+    background-color: rgb(42 147 114);
+    color: black;
     text-align:center;
 }
 
 
-
 button{
-    
     width:100%;
     border-width: 0px; 
     background-color:#005567;
