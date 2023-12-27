@@ -1,4 +1,4 @@
-Concepts I've learned during this project:
+Concepts I learned during this project:
 
 Pseudo-elements before and after used to create the text int the horizontal navigator bar. 
 
