@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>My Shelf - My Library</title>
+        <title>My Recs* - My Library</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./img/icon-library.png" type="image/icon type">
+        <script src="./script.js" defer></script>
     </head>
     <body> 
         <header>
@@ -15,15 +16,12 @@
                 <li><a href="#">Author</a></li>
             </ul>
         </header>
-        <div>
-            <li class="title">
-                <span class = "title-text" data-text = "My"></span>
-                <span class = "title-text" data-text = "Reccs*"></span>
-            </li>
+        <div class="content-reccs">
+            <ul id="card-container">
+            </ul>
             <ul class="all-books">
-                <li class="list">
-                    <div class="book"></div>
-                    <a href="#">Book</a>
+                <li>
+                    <button id="arrow">&#60</button>
                 </li>
                 <li class="list">
                     <div class="book"></div>
@@ -36,9 +34,16 @@
                 <li class="list">
                     <div class="book"></div>
                     <a href="#">Book</a>
-                </li>       
+                </li>
+                <li class="list">
+                    <div class="book"></div>
+                    <a href="#">Book</a>
+                </li> 
+                <li>
+                    <button id="arrow">&#62</button>
+                </li>      
             </ul>
         </div>
-        <footer> Enioluwafe Balogun - 2023</footer>
+        
     </body>
 </html>
