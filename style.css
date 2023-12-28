@@ -5,7 +5,7 @@ body{
     font-family:"Roboto-Flex", sans-serif;
     margin:0px;
     overflow-x:hidden;
-    
+    height:100%;
 }
 
 header span{
@@ -95,7 +95,12 @@ ul{
     width: 131px;
     font-size:16px; 
     font-family: "Belanosima", sans-serif;
-    font-weight:normal;    
+    font-weight:normal;   
+}
+
+
+.book-list:hover{
+    box-shadow: 2px 2px 5px 0px yellowgreen;
 }
 
 .book-list span{
@@ -149,13 +154,15 @@ footer{
     background-color: rgb(42 147 114);
     color: black;
     text-align:center;
+    position:relative;
+    bottom:0;
 }
 
 
 button{
     width:100%;
     border-width: 0px; 
-    background-color:yellowgreen;
+    background-color:rgb(154, 205, 50);
     color:black;
     font-size: 32px;
     font-weight:900;
@@ -180,3 +187,27 @@ button{
 .underline span{
     text-decoration: underline;
 }
+
+button{
+    background-color:black ;
+    color: white;
+    font-family: "Belanosima", sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    text-align: center;
+    border-color:black;
+    border-width: 2px;
+    border-style:double;
+    border-left: 0px;
+    margin-top: -16px; 
+    display: block;
+    box-shadow: 2px 3px 10px 0px #1B6037;
+
+}
+
+button:hover{
+    background-color: #1B6037;
+    border-color:#1B6037;
+    box-shadow: 2px 5px 10px 0px rgb(154, 205, 50); 
+}
+
