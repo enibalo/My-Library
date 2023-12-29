@@ -1,10 +1,9 @@
 const container  = document.querySelector("#card-container");
-
-let light = 42;
-let light2 = 20;
+let light = 1;
 
 
-for (let i = 0; i < 10; i ++){
+for (let i = 0; i < 5; i ++){
+
     const card2 = document.createElement("li");
     card2.classList.add("title");
 
@@ -20,27 +19,24 @@ for (let i = 0; i < 10; i ++){
     card2.appendChild(span2);
     
 
-    span2.style.setProperty( "--color", "hsl( 80, 61%," + light2+ "%)");
-    span.style.setProperty( "--color", "hsl( 80, 61%," + light2+ "%)");
+    span2.style.setProperty( "--color", "rgba( 154, 205, 50, " + light+ ")");
+    span.style.setProperty( "--color", "rgba( 154, 205, 50, " + light+ ")");
 
-    card2.style.width = "156px";
-    card2.style.backgroundColor = "hsl(80, 0%," + light + "%)";
-    card2.style.height = "220px";
-    card2.style.marginLeft = "-40px";
-  
-   
-
-   if (i != 9 ){
-    container.appendChild(card2);
-    }
-    
-
-    if ( i <= 3){
-        light = light + 12; 
-        light2 = light2 + 10;
+    if ( i != 0) {
+        span.style.animationDuration = "4s";
+        span.style.animationName = "move";
+        span.style.animationFillMode = "forwards";
+        span2.style.animationDuration = "6s";
+        span2.style.animationName = "move";
+        span2.style.animationFillMode = "forwards";
     }else{
-        light = light - 12; 
-        light2 = light2 - 10;
+        span.style.zIndex = "1";
+        span2.style.zIndex = "1";
     }
+
+    card2.style.width = "140px";
+    container.appendChild(card2);
+    light-= 0.2;
 
 }
+

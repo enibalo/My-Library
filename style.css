@@ -202,15 +202,13 @@ a{
 .content-reccs{
     display: flex;
     flex-direction: column;
-    align-items:center;
     padding-top: 64px;
 }
 
 #card-container{
     display:flex;
-    gap: 0px;
-    margin: 0px 40px;
-    margin-left: 80px;
+    justify-content: space-between;
+
 }
 
 #arrow{
@@ -230,4 +228,14 @@ a{
 #arrow:hover{
     color:black;
     
+}
+
+@keyframes move{
+    from{
+        position: relative;
+        left: -1400px;
+    }
+    to{
+        left: 0px;
+    }
 }
