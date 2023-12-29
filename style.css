@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto-Flex");
 @import url("https://fonts.googleapis.com/css?family=Belanosima");
 
+
+html{
+    height: 100%;
+}
 body{
     font-family:"Roboto-Flex", sans-serif;
     margin:0px;
@@ -10,14 +14,13 @@ body{
     
 }
 
-header span{
-    
+h1{ 
     font-size: 32px;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    
     font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    justify-content: center;
 }
 
 
@@ -202,6 +205,7 @@ a{
 .content-reccs{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items:center;
     padding-top: 64px;
 }
@@ -228,6 +232,79 @@ a{
 }
 
 #arrow:hover{
-    color:black;
-    
+    color:black;  
+}
+
+/*Login page */
+
+#loginbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(219, 219, 219);
+    border-radius: 5px 5px;
+    width: min-content;
+    padding: 16px 128px;
+}
+
+.login{
+    margin-top: 32px;
+}
+
+input .login{
+    color: white;
+    background-color: black;
+    box-shadow:2px 2px 5px 0px #1B6037;
+    border-style: none;
+    width: 100%;
+    border-radius: 5px 5px;
+}
+
+#loginbox span, .info{
+    margin-top: 8px;
+    color: grey;  
+    font-size:10px;
+}
+
+#loginbox input{
+    height: 32px;
+}
+
+.blob{
+    width: 400px;
+    height: 300px;
+    background-color: #1B6037;
+    border-radius: 25% 50%;
+    border-color:#1B6037;
+    border-width: 1px;
+    border-style: solid;
+    display:block;
+}
+
+#blob-left{
+    position:relative;
+    left: -100px;
+    top: 32px;
+}
+
+#blob-right{
+    position:relative;
+    height: 400px;
+    right: -100px;
+    bottom: -350px;
+}
+
+.loginboxed{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-login{
+    display:flex;
+    justify-content: space-between;
+    height: 100%;
 }
