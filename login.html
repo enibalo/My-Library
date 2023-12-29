@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login - My Library</title>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./img/icon-library.png" type="image/icon type">
+        
+    </head>
+    <body>
+        <header>
+            <h1>My Library</h1> 
+            <ul class="navigator">
+                <li><a href ="./index.html">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Author</a></li>
+            </ul>
+        </header>
+        <div class="content-login">
+            <div class="blob" id="blob-left"></div>
+            <div class="loginboxed">
+                <form id="loginbox">
+                    <h1>Sign in</h1>
+                    <label for="username" class="login">Username</label>
+                    <input type="text" maxlength="12" placeholder="Username" 
+                    id="username" name="username" >
+                    <label for="'password" class="login">Password</label>
+                    <input type="text" maxlength="12" placeholder="Password" 
+                    id="password" name="password">
+                    <span>Don't have an account?</span>
+                    <input type="submit" value="Sign in" class="login">
+                </form>
+                <span class="info">Accounts are temprorary & will be deleted when you exit the page</span>
+            </div> 
+            <div class="blob" id="blob-right"></div>
+        </div>
+    </body>
+</html>
