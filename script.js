@@ -10,10 +10,11 @@ for (let i = 0; i < 5; i ++){
     const span = document.createElement("span");
     span.setAttribute( "data-text",  "My");
     span.classList.add("title-text");
+    span.className = "title-text top-layer";
     card2.appendChild(span);
 
     const span2 = document.createElement("span");
-    span2.setAttribute( "data-text",  "Recs*");
+    span2.setAttribute( "data-text",  "Recs");
     span2.classList.add("title-text");
     
     card2.appendChild(span2);
@@ -26,12 +27,12 @@ for (let i = 0; i < 5; i ++){
         span.style.animationDuration = "4s";
         span.style.animationName = "move";
         span.style.animationFillMode = "forwards";
-        span2.style.animationDuration = "6s";
+        span2.style.animationDuration = "4s";
         span2.style.animationName = "move";
         span2.style.animationFillMode = "forwards";
     }else{
-        span.style.zIndex = "1";
-        span2.style.zIndex = "1";
+        span.style.zIndex = "3";
+        span2.style.zIndex = "2";
     }
 
     card2.style.width = "140px";

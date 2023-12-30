@@ -9,8 +9,8 @@ html{
 }
 body{
     font-family:"Roboto-Flex", sans-serif;
+    overflow-x: hidden;
     margin:0px;
-    overflow-x:hidden;
     height:100%;
     padding: 0px;
     
@@ -88,6 +88,7 @@ ul{
 }
 
 .title-text::before{
+    background-color: white;
     width: 100%;
     color: var(--color, yellowgreen);  
 }
@@ -139,15 +140,19 @@ ul{
     margin:0px;
 }
 
+.top-layer{
+    z-index: 1;
+}
+
+
 
 .main ul {
     padding-right:32px;
     margin: 64px 0px;
 }
 
-.main, .content, .content-reccs{
-    height: 100%;
-    padding-bottom: 64px;
+.content-read, .main, .content, .content-reccs{
+    margin-bottom: 64px;
 }
 
 a{
@@ -240,7 +245,25 @@ a{
     color:black;  
 }
 
+@keyframes move{
+    from{
+        position: relative;
+        left: -1400px;
+    }
+    to{
+        left: 0px;
+    }
+} 
+
 /*Login page */
+
+.loginboxed{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 
 #loginbox{
     display:flex;
@@ -301,19 +324,13 @@ input .login{
     bottom: -350px;
 }
 
-.loginboxed{
-    text-align:center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .content-login{
+    margin-top: -64px;
     display:flex;
     justify-content: space-between;
-    height: 100%;
-    height: 100%; 
-    margin-top: -64px;
+    height: inherit; 
 }
 
 /*Will read*/
@@ -336,172 +353,6 @@ footer{
 
 }
 
-@keyframes move{
-    from{
-        position: relative;
-        left: -1400px;
-    }
-    to{
-        left: 0px;
-    }
-} /*Login page */
-
-#loginbox{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;   
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(219, 219, 219);
-    border-radius: 5px 5px;
-    width: min-content;
-    padding: 16px 128px;
-}
-
-.login{
-    margin-top: 32px;
-}
-
-input .login{
-    color: white;
-    background-color: black;
-    box-shadow:2px 2px 5px 0px #1B6037;
-    border-style: none;
-    width: 100%;
-    border-radius: 5px 5px;
-}
-
-#loginbox span, .info{
-    margin-top: 8px;
-    color: grey;  
-    font-size:10px;
-}
-
-#loginbox input{
-    height: 32px;
-}
-
-.blob{
-    width: 400px;
-    height: 300px;
-    background-color: #1B6037;
-    border-radius: 25% 50%;
-    border-color:#1B6037;
-    border-width: 1px;
-    border-style: solid;
-    display:block;
-}
-
-#blob-left{
-    position:relative;
-    left: -100px;
-    top: 32px;
-}
-
-#blob-right{
-    position:relative;
-    height: 400px;
-    right: -100px;
-    bottom: -350px;
-}
-
-.loginboxed{
-    text-align:center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.content-login{
-    display:flex;
-    justify-content: space-between;
-    height: 100%;
-}
-
-@keyframes move{
-    from{
-        position: relative;
-        left: -1400px;
-    }
-    to{
-        left: 0px;
-    }
-} /*Login page */
-
-#loginbox{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;   
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(219, 219, 219);
-    border-radius: 5px 5px;
-    width: min-content;
-    padding: 16px 128px;
-}
-
-.login{
-    margin-top: 32px;
-}
-
-input .login{
-    color: white;
-    background-color: black;
-    box-shadow:2px 2px 5px 0px #1B6037;
-    border-style: none;
-    width: 100%;
-    border-radius: 5px 5px;
-}
-
-#loginbox span, .info{
-    margin-top: 8px;
-    color: grey;  
-    font-size:10px;
-}
-
-#loginbox input{
-    height: 32px;
-}
-
-.blob{
-    width: 400px;
-    height: 300px;
-    background-color: #1B6037;
-    border-radius: 25% 50%;
-    border-color:#1B6037;
-    border-width: 1px;
-    border-style: solid;
-    display:block;
-}
-
-#blob-left{
-    position:relative;
-    left: -100px;
-    top: 32px;
-}
-
-#blob-right{
-    position:relative;
-    height: 400px;
-    right: -100px;
-    bottom: -350px;
-}
-
-.loginboxed{
-    text-align:center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.content-login{
-    display:flex;
-    justify-content: space-between;
-    height: 100%; 
-    margin-top: -64px;
-}
 
 /*Will read*/
 #read{
@@ -511,6 +362,8 @@ input .login{
 
 #margin-books{
     margin-left: 250px;
-    gap: 112px
 }
 
+.hidden{
+    overflow:hidden;
+}
