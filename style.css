@@ -147,6 +147,7 @@ ul{
 
 .main, .content, .content-reccs{
     height: 100%;
+    padding-bottom: 64px;
 }
 
 a{
@@ -203,6 +204,7 @@ a{
 
 /*Specific to reccs */
 .content-reccs .all-books{
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -211,14 +213,13 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: top;
-    align-items:center;
     gap: 128px;
 }
 
 #card-container{
     display:flex;
     justify-content: space-between;
-
+    min-width: max-width;
 }
 
 #arrow{
@@ -323,7 +324,7 @@ input .login{
 
 #margin-books{
     margin-left: 250px;
-    gap: 112px
+   
 }
 
 
@@ -332,7 +333,7 @@ footer{
     padding:8px 16px;
     background-color: rgb(42 147 114);
     text-align:center;
-    margin-top: 64px;
+
 }
 
 @keyframes move{
@@ -513,11 +514,3 @@ input .login{
     gap: 112px
 }
 
-
-footer{
-    width: 100%;
-    padding:8px 16px;
-    background-color: rgb(42 147 114);
-    text-align:center;
-    margin-top: 64px;
-}
