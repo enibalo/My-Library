@@ -151,8 +151,12 @@ ul{
     margin: 64px 0px;
 }
 
-.content-read, .main, .content, .content-reccs{
-    margin-bottom: 64px;
+.content-read,  .content, .content-reccs{
+    padding-bottom: 64px;
+}
+
+.main{
+    padding-bottom: 8px;
 }
 
 a{
