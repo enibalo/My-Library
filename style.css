@@ -145,6 +145,9 @@ ul{
     margin: 64px 0px;
 }
 
+.main, .content, .content-reccs{
+    height: 100%;
+}
 
 a{
     text-decoration:none;
@@ -201,15 +204,15 @@ a{
 /*Specific to reccs */
 .content-reccs .all-books{
     justify-content: center;
-    margin: 136px 0px;
     align-items: center;
 }
 
 .content-reccs{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items:center;
+    gap: 128px;
 }
 
 #card-container{
@@ -324,3 +327,11 @@ input .login{
     gap: 112px
 }
 
+
+footer{
+    width: 100%;
+    padding:8px 16px;
+    background-color: rgb(42 147 114);
+    text-align:center;
+    margin-top: 64px;
+}
