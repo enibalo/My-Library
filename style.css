@@ -56,15 +56,13 @@ ul{
 .title{
     width:100px;
     height:180px;
-    padding:8px;
-    padding-top:0px;
-    padding-left:0px;
+    padding-bottom: 8px;
     font-family: "Belanosima", sans-serif;
     font-weight:900;
     display:flex;
     flex-direction: column;
     justify-content:top;
-    gap:90px;  
+    gap:92px;  
     font-size:94px;
     font-weight:900;
 }
@@ -99,7 +97,11 @@ ul{
     background-color: var(--color, yellowgreen);
 }
 
-.book-list{
+.top-layer{
+    z-index: 1;
+}
+
+.list-title{
     width: 131px;
     font-size:16px; 
     font-family: "Belanosima", sans-serif;
@@ -107,27 +109,27 @@ ul{
 }
 
 
-.book-list:hover{
+.list-title:hover{
     box-shadow: 2px 2px 5px 0px yellowgreen;
 }
 
-.book-list span{
+.list-title span{
     display: inline-block;
     max-width:100px;
     margin:8px;
 }
 
-.book{
+.book div{
     width:131px;
     height:200px;
     background-color:rgb(219, 219, 219);
 }
 
-.list{
+.book{
     text-align:center;
 }
 
-.list a {
+.book a {
     display:inline-block;
     margin: 5px 0px;
 }
@@ -138,10 +140,6 @@ ul{
     justify-content:initial;
     gap: 16px;
     margin:0px;
-}
-
-.top-layer{
-    z-index: 1;
 }
 
 
@@ -185,8 +183,6 @@ a{
 
 }
 
-/*Specific to shelf */
-
 
 #new-list{
     background-color:black ;
@@ -211,7 +207,6 @@ a{
     box-shadow: 2px 5px 10px 0px hsl(80, 61%, 50%); 
 }
 
-/*Specific to reccs */
 .content-reccs .all-books{
     flex-wrap: nowrap;
     justify-content: center;
@@ -259,7 +254,6 @@ a{
     }
 } 
 
-/*Login page */
 
 .loginboxed{
     text-align:center;
@@ -337,7 +331,7 @@ input .login{
     height: inherit; 
 }
 
-/*Will read*/
+
 #read{
     position: fixed;
     margin-right: 64px;
@@ -349,24 +343,6 @@ input .login{
 }
 
 
-footer{
-    width: 100%;
-    padding:8px 16px;
-    background-color: rgb(42 147 114);
-    text-align:center;
-
-}
-
-
-/*Will read*/
-#read{
-    position: fixed;
-    margin-right: 64px;
-}
-
-#margin-books{
-    margin-left: 250px;
-}
 
 .hidden{
     overflow:hidden;
