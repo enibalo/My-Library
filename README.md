@@ -1,9 +1,15 @@
-Concepts I've learned how to use during this project:
+Concepts I've learned/used during this project:
 
-Pseudo-elements ::before and ::after. It created the text in the home page's horizontal navigation bar.  
+Pseudo-elements ::before and ::after.   
 
-I gained a deeper understanding of the list elements, and flexbox in CSS. 
+Common page elements such as buttons, spans, forms...
 
 The  attr() function is used in the home page's horizontal navigator bar. 
 
-Absolute vs relative vs fixed position of elements. 
+Variables (--variables)
+
+Flexbox, inline, inline-block, and block display elements 
+
+Absolute vs relative vs fixed vs sticky position of elements
+
+Margin-collapsing 
