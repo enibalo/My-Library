@@ -43,9 +43,6 @@ ul{
     gap:64px;
 }
 
-.main ul{
-    gap:112px;
-}
 
 .navigator{
     padding:0px 64px;
@@ -101,6 +98,17 @@ ul{
     z-index: 1;
 }
 
+.content-home ul{
+    gap:112px;
+    padding-right:32px;
+    margin: 64px 0px;
+}
+
+
+
+#no-margin{
+    margin: 0px;
+}
 .list-title{
     width: 131px;
     font-size:16px; 
@@ -142,19 +150,8 @@ ul{
     margin:0px;
 }
 
-
-
-.main ul {
-    padding-right:32px;
-    margin: 64px 0px;
-}
-
-.content-read,  .content, .content-reccs{
+.content-home, .content-read,  .content-shelf, .content-reccs{
     padding-bottom: 64px;
-}
-
-.main{
-    padding-bottom: 8px;
 }
 
 a{
@@ -162,25 +159,17 @@ a{
     color:black;
 }
 
-
-
-.content{
+.content-shelf,.content-read{
     display:flex;
-    flex-direction:row;
     gap: 80px;
 }
 
 
-
-.all-books{
-    display:flex;
+.all-books{ 
     flex-wrap:wrap;
     align-content:flex-start;
     justify-content: left;
-    gap:64px;
     margin: 0px;
-
-
 }
 
 
@@ -333,13 +322,8 @@ input .login{
 
 
 #read{
-    position: fixed;
-    margin-right: 64px;
-}
-
-#margin-books{
-    margin-left: 250px;
-   
+    position: sticky;
+    width: auto;
 }
 
 
