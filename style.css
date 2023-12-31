@@ -143,7 +143,6 @@ ul{
 }
 
 .side-navigator{
-    display: flex;
     flex-direction:column;
     justify-content:initial;
     gap: 16px;
@@ -209,11 +208,7 @@ a{
     gap: 128px;
 }
 
-#card-container{
-    display:flex;
-    justify-content: space-between;
-    min-width: max-width;
-}
+
 
 #arrow{
     font-size: 96px;
